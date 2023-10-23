@@ -2,12 +2,12 @@
   "name": "novelator",
   "version": "1.0.4",
   "description": "Lenguaje para escribir novelas y pasarlas a un JSON.",
-  "main": "src/novelator.bin.js",
+  "main": "src/novelator.js",
   "bin": {
     "novelator": "src/novelator.bin.js"
   },
   "scripts": {
-    "build": "npx pegjs -o src/novelator.js src/novelator.pegjs",
+    "build": "npx pegjs -o src/novelator.js src/novelator.pegjs && npx pegjs -o docs/lib/novelator.js --format globals --export-var Novelator_parser src/novelator.pegjs",
     "test": "./src/novelator.bin.js test/ejemplo-de-sintaxis.nvl"
   },
   "keywords": [],

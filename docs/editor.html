@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novelator | Editor</title>
+    <script src="lib/codemirror.js"></script>
+    <script src="lib/novelator.js"></script>
+    <link rel="stylesheet" href="lib/codemirror.css" />
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        #caja_de_titulo {
+            background-color: #333;
+            color: white;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+        .CodeMirror {
+            border: 1px solid #333;
+            font-size: 10px;
+        }
+        .CodeMirror-linenumbers {
+            background-color: #333;
+        }
+        #panel_de_errores {
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caja_de_titulo">Novelator | Editor</div>
+    <textarea id="editor_de_entrada"></textarea>
+    <div id="panel_de_botones">
+        <button onclick="validar_codigo()">Validar</button>
+    </div>
+    <div id="panel_de_errores"></div>
+    <textarea id="editor_de_salida"></textarea>
+    <script>
+        const editor_de_entrada = CodeMirror.fromTextArea(document.getElementById("editor_de_entrada"), {
+            lineNumbers: true
+        });
+        const editor_de_salida = CodeMirror.fromTextArea(document.getElementById("editor_de_salida"), {
+            lineNumbers: true
+        });
+        const validar_codigo = function() {
+            const codigo_de_entrada = editor_de_entrada.getValue();
+            try {
+                const salida = Novelator_parser.parse(codigo_de_entrada);
+                document.getElementById("panel_de_errores").textContent = "";
+                editor_de_salida.setValue(JSON.stringify(salida, null, 2));
+            } catch(error) {
+                console.log(error);
+                document.getElementById("panel_de_errores").textContent = error.toString();
+                editor_de_salida.setValue("Error");
+            }
+        };
+    </script>
+</body>
+</html>

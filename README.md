@@ -89,6 +89,26 @@ Para cambiar de capítulo se escribe así:
 
 `Cambio de capítulo: Título del nuevo capítulo`
 
+## Uso como API
+
+Para usarlo como API, tienes dos opciones.
+
+### Opción 1. API para Node.js.
+
+```js
+const Novelator_parser = require("novelator");
+Novelator_parser.parse(texto_novelator);
+```
+
+### Opción 2. API para navegadores.
+
+```html
+<script src="node_modules/novelator/docs/lib/novelator.js"></script>
+<script>
+Novelator_parser.parse(texto_novelator);
+</script>
+```
+
 ## ¿Qué más?
 
 Bueno. Con esto te aseguras que tu novela puede ser pasada a formato JSON. Ya está, luego con el JSON puedes hacer muchas cosas.
