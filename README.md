@@ -32,6 +32,17 @@ Cuando hablan varios personajes a la vez, se escribe así:
 
 `<Personaje 1> y <Personaje 2> y <Personaje 3> dicen: cosas que dicen estos personajes.`
 
+Para escribir un monólogo de múltiples líneas, se escribe así:
+
+```
+<Personaje 1> dice:
+Esto es un monólogo.
+Puedes usar múltiples líneas.
+Sin embargo, cuando hagas 2 saltos de línea juntos, estarás terminando el monólogo.
+
+<Personaje 2> dice: esto ya forma parte de la siguiente intervención.
+```
+
 ### Sentencia de acción
 
 Cuando solo actúa 1 personaje, se escribe así:
@@ -49,6 +60,22 @@ Cuando lo hacen varios personajes, se escribe así:
 `<Personaje 1> y <Personaje 2> hacen lo que sea.`
 
 `<Personaje 1> y <Personaje 2> callan.`
+
+Para escribir una acción de múltiples líneas, se escribe así:
+```
+<Personaje 1>
+Esto es una acción de múltiples líneas.
+Puedes usar múltiples líneas.
+Sin embargo, cuando hagas 2 saltos de línea juntos, estarás terminando esta acción.
+
+<Personaje 2> hace otra cosa.
+```
+
+### Sentencia de cambio de fondo
+
+Para cambiar de fondo se escribe así:
+
+`Cambio de fondo: nueva_imagen_de_fondo.png`
 
 ### Sentencia de cambio de escena
 
