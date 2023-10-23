@@ -2,6 +2,16 @@
 
 Lenguaje para escribir novelas y pasarlas a un JSON.
 
+## Editor en línea
+
+Puedes probarlo ya en la aplicación:
+
+- [https://allnulled.github.io/novelator/editor.html](https://allnulled.github.io/novelator/editor.html)
+
+También puedes probar el motor básico en la aplicación:
+
+- [https://allnulled.github.io/novelator/motor.html](https://allnulled.github.io/novelator/motor.html)
+
 ## Instalación
 
 ```sh
