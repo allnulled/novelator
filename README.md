@@ -53,6 +53,8 @@ Sin embargo, cuando hagas 2 saltos de línea juntos, estarás terminando el mon�
 <Personaje 2> dice: esto ya forma parte de la siguiente intervención.
 ```
 
+Nótese que se termina la intervención cuando se escriben 2 saltos de línea seguidos.
+
 ### Sentencia de acción
 
 Cuando solo actúa 1 personaje, se escribe así:
@@ -80,6 +82,8 @@ Sin embargo, cuando hagas 2 saltos de línea juntos, estarás terminando esta ac
 
 <Personaje 2> hace otra cosa.
 ```
+
+Nótese que se termina la acción cuando se escriben 2 saltos de línea seguidos.
 
 ### Sentencia de cambio de fondo
 
