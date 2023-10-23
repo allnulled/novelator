@@ -13,7 +13,7 @@ const novelator_parser = require(fichero_novelator_parser);
 try {
     const fichero_novela_a_json_contenido = novelator_parser.parse(fichero_contenido);
     const fichero_novela_a_json = fichero.replace(/\.nvl$/g, ".json" );
-    fs.writeFileSync(fichero_novela_a_json, fichero_novela_a_json_contenido, "utf8");
+    fs.writeFileSync(fichero_novela_a_json, JSON.stringify(fichero_novela_a_json_contenido, null, 4), "utf8");
     console.log("[*] Fichero pasado a JSON exitosamente en:");
     console.log("[*]  - " + fichero_novela_a_json);
 } catch(error) {

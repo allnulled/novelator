@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "npx pegjs -o src/novelator.js src/novelator.pegjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./src/novelator.bin.js test/ejemplo-de-sintaxis.nvl"
   },
   "keywords": [],
   "author": "allnulled",
