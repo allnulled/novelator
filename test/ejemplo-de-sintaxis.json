@@ -1,1 +1,109 @@
-[]
+[
+    {
+        "tipo": "sentencia de cambio de capítulo",
+        "capitulo": "Capítulo 1: introducción."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Narrador"
+        ],
+        "dicen": "Bienvenidos. Esta es la historia de ejemplo.\nEn esta historia se van a ver ejemplos de todas las sintaxis del lenguaje novelator.\nPor ejemplo, esto es una acción multilínea."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Protagonista"
+        ],
+        "dicen": "¡Vaya, qué calor hace!"
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Mascota"
+        ],
+        "dicen": "¡Guf, guf!"
+    },
+    {
+        "tipo": "sentencia de acción",
+        "personajes": [
+            "Narrador"
+        ],
+        "hacen": "mira a la mascota."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Narrador"
+        ],
+        "dicen": "¡Qué majo es!"
+    },
+    {
+        "tipo": "sentencia de acción",
+        "personajes": [
+            "Protagonista"
+        ],
+        "hacen": "Abre un baúl que hay en el centro.\nSaca un espray.\nRocía al público con el spray. Que solo lleva agua."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Protagonista"
+        ],
+        "dicen": "espero que no estéis muy acalorados."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Narrador"
+        ],
+        "dicen": "Nuestra historia se emplaza en el desierto del Sáhara.\nPor eso, hace mucho calor."
+    },
+    {
+        "tipo": "sentencia de cambio de capítulo",
+        "capitulo": "Capítulo 2: en la casa."
+    },
+    {
+        "tipo": "sentencia de cambio de escena",
+        "escena": "Escena inicial."
+    },
+    {
+        "tipo": "sentencia de cambio de fondo",
+        "fondo": "desierto.png"
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Protagonista"
+        ],
+        "dicen": "Uffff... qué calor. Voy a abrir la ventana."
+    },
+    {
+        "tipo": "sentencia de acción",
+        "personajes": [
+            "Protagonista"
+        ],
+        "hacen": "se dirige hacia la ventana y la abre."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Protagonista"
+        ],
+        "dicen": "Gufi, no sufras. Tenemos agua, de momento."
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Mascota"
+        ],
+        "dicen": "¡Guf! ¡Guf, guf!"
+    },
+    {
+        "tipo": "sentencia de diálogo",
+        "personajes": [
+            "Protagonista"
+        ],
+        "dicen": "Yaaaa, ya. Hay que hacer algo cuanto antes, tienes razón. Venga, vamos a por una garrafa."
+    }
+]

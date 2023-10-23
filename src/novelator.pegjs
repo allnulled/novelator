@@ -18,21 +18,21 @@ Cambio_de_escena = "Cambio de escena:"
     { return { tipo: "sentencia de cambio de escena", escena } }
 
 Cambio_de_fondo = "Cambio de fondo:"
-  escena:hasta_final_de_linea
+  fondo:hasta_final_de_linea
     { return { tipo: "sentencia de cambio de fondo", fondo } }
 
-Cambio_de_capitulo = "Cambio de capitulo:"
+Cambio_de_capitulo = "Cambio de capítulo:"
   capitulo:hasta_final_de_linea
     { return { tipo: "sentencia de cambio de capítulo", capitulo } }
 
 Sentencia_de_dialogo =
   personajes:Nombres _ ("dicen:" / "dice:")
-  dicen:(hasta_final_de_linea/hasta_multiples_lineas)
+  dicen:(hasta_multiples_lineas/hasta_final_de_linea)
     { return { tipo: "sentencia de diálogo", personajes, dicen } }
 
 Sentencia_de_accion = 
-  personajes:Nombres _
-  hacen:(hasta_final_de_linea/hasta_multiples_lineas)
+  personajes:Nombres
+  hacen:(hasta_multiples_lineas/hasta_final_de_linea)
     { return { tipo: "sentencia de acción", personajes, hacen } }
 
 Nombres = 
@@ -47,8 +47,8 @@ Nombre = ("«"/"<") (!("»"/">").)* ("»"/">") { return text().replace(/^(<|«)/
 
 hasta_final_de_linea = ((!__).)* { return text().trim() }
 
-hasta_multiples_lineas = ((!__ __).)* { return text().trim() }
+hasta_multiples_lineas = __ ((!(__ __)).)* { return text().trim() }
 
-_ = " " / "\t"
-__ = "\n" / "\r\n" / "\r"
-___ = _ / __
+_ = " " / "\t" {}
+__ = "\n" / "\r\n" / "\r" {}
+___ = _ / __ {}
