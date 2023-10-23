@@ -11,6 +11,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "allnulled",
+  "license": "WTFPL",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/novelator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/novelator/issues"
+  },
+  "homepage": "https://github.com/allnulled/novelator#readme"
 }
