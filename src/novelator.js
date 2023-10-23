@@ -142,11 +142,11 @@ function peg$parse(input, options) {
       peg$startRuleFunction  = peg$parseLanguage,
 
       peg$c0 = function(sentencia) { return sentencia },
-      peg$c1 = "Cambio de escena",
-      peg$c2 = peg$literalExpectation("Cambio de escena", false),
+      peg$c1 = "Cambio de escena:",
+      peg$c2 = peg$literalExpectation("Cambio de escena:", false),
       peg$c3 = function(escena) { return { tipo: "sentencia de cambio de escena", escena } },
-      peg$c4 = "Cambio de capitulo",
-      peg$c5 = peg$literalExpectation("Cambio de capitulo", false),
+      peg$c4 = "Cambio de capitulo:",
+      peg$c5 = peg$literalExpectation("Cambio de capitulo:", false),
       peg$c6 = function(capitulo) { return { tipo: "sentencia de cambio de capítulo", capitulo } },
       peg$c7 = "dicen:",
       peg$c8 = peg$literalExpectation("dicen:", false),
@@ -409,9 +409,9 @@ function peg$parse(input, options) {
     var s0, s1, s2;
 
     s0 = peg$currPos;
-    if (input.substr(peg$currPos, 16) === peg$c1) {
+    if (input.substr(peg$currPos, 17) === peg$c1) {
       s1 = peg$c1;
-      peg$currPos += 16;
+      peg$currPos += 17;
     } else {
       s1 = peg$FAILED;
       if (peg$silentFails === 0) { peg$fail(peg$c2); }
@@ -438,9 +438,9 @@ function peg$parse(input, options) {
     var s0, s1, s2;
 
     s0 = peg$currPos;
-    if (input.substr(peg$currPos, 18) === peg$c4) {
+    if (input.substr(peg$currPos, 19) === peg$c4) {
       s1 = peg$c4;
-      peg$currPos += 18;
+      peg$currPos += 19;
     } else {
       s1 = peg$FAILED;
       if (peg$silentFails === 0) { peg$fail(peg$c5); }

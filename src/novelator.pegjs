@@ -12,11 +12,11 @@ Sentencia =
   Sentencia_de_dialogo /
   Sentencia_de_accion
 
-Cambio_de_escena = "Cambio de escena"
+Cambio_de_escena = "Cambio de escena:"
   escena:hasta_final_de_linea
     { return { tipo: "sentencia de cambio de escena", escena } }
 
-Cambio_de_capitulo = "Cambio de capitulo"
+Cambio_de_capitulo = "Cambio de capitulo:"
   capitulo:hasta_final_de_linea
     { return { tipo: "sentencia de cambio de capítulo", capitulo } }
 
