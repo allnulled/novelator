@@ -8,9 +8,9 @@ Puedes probarlo ya en la aplicación:
 
 - [https://allnulled.github.io/novelator/editor.html](https://allnulled.github.io/novelator/editor.html)
 
-También puedes probar el motor básico en la aplicación:
+También puedes probar un motor básico usando **novelator-lector**:
 
-- [https://allnulled.github.io/novelator/motor.html](https://allnulled.github.io/novelator/motor.html)
+- [https://github.com/allnulled/novelator-lector](https://github.com/allnulled/novelator-lector)
 
 ## Instalación
 
